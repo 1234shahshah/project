@@ -101,7 +101,10 @@ class Game{
                  }
                  
                   if (player.index !== null) {
-                 fruits.destroy();
+                if (fruitGroup.get(i).isTouching (players))
+                {
+                    fruitGroup.get(i).destroy()
+                }
                   }
                 
 
